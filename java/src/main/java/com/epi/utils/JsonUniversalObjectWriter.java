@@ -111,7 +111,7 @@ public class JsonUniversalObjectWriter {
       return;
     }
     if (o instanceof BinarySearchTreePrototypeTemplate.BSTNode<?>) {
-      handle(builder, name, ((BinarySearchTreePrototypeTemplate.BSTNode<?>)o).toList());
+      handle(builder, name, ((BinarySearchTreePrototypeTemplate.BSTNode<?>)o));//.toList());
       return;
     }
     if (o instanceof CustomJsonAdapter) {
@@ -145,7 +145,7 @@ public class JsonUniversalObjectWriter {
       return;
     }
     if (o instanceof BinarySearchTreePrototypeTemplate.BSTNode<?>) {
-      handle(builder, ((BinarySearchTreePrototypeTemplate.BSTNode<?>)o).toList());
+      handle(builder, ((BinarySearchTreePrototypeTemplate.BSTNode<?>)o));//.toList());
       return;
     }
     if (o instanceof CustomJsonAdapter) {
